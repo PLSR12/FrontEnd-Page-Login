@@ -1,21 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './styles.css'
 
 const LoginPage = () => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
+
+  function loginHandler(e)  {
+    e.preventDefault()
+
+    console.log("submit", { email,password })
+  }
+
   return (
     <div className='login'>
       <h1> BodyBook</h1>
       <form className='form'>
+        <label > Email </label>
+        <input
+          type='text'
+          className='email'
+          placeholder='Email'
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
 
-        <label for='email'> Email </label>
-        <input type='text' className='email' placeholder='Email' />
-
-        <label for='password'> Password </label>
-        <input type='password' className='password' placeholder='Password' />
+        <label> Password </label>
+        <input
+          type='password'
+          className='password'
+          placeholder='Password'
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
 
         <div className='actions'>
-          <button type='submit'> Entrar </button>
+          <button type='submit' onClick={loginHandler}> Entrar </button>
         </div>
       </form>
     </div>
