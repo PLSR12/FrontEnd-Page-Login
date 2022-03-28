@@ -37,7 +37,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.setitem('user', JSON.stringify(loggedUser))
     localStorage.setitem('user', JSON.stringify(token))
 
-    if (password === 'secret') {
+    if (password !== '') {
       setUser(loggedUser)
       navigate('/')
     }
