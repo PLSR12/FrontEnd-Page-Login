@@ -48,14 +48,12 @@ button {
     background: #fa0000;
     box-shadow: -4px 4px 18px rgb(0 0 0 / 9%);
     border-radius: 10px;
+    border: none;
     width: 133px;
     height: 46px;
-    margin-top: 25px;
-    ;
-    border: none;
-    font-style: normal;
-    font-weight: normal;
+    margin-top: 5vh;
+    margin-left: 12vh;
     font-size: 15px;
-    line-height: 18px;
+    text-align: center;
     color: #ffffff;
 }

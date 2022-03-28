@@ -39,8 +39,7 @@ const LoginPage = () => {
 
         <div className='actions'>
           <button type='submit' onClick={loginHandler}>
-            {' '}
-            Entrar{' '}
+            Entrar
           </button>
         </div>
       </form>

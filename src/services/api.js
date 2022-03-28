@@ -5,7 +5,7 @@ export const api = axios.create({
 })
 
 export const createSession = async (email, password) => {
-  return api.post('/sessions', { email, password })
+  return api.post('http://localhost/3001/sessions', { email, password })
 }
 
 export const getUsers = async () => {
